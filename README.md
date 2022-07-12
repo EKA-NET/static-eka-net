@@ -8,15 +8,21 @@
 
     ```shell
     npm install
+
+    # make sure you have gatsby and gatsby-cli installed!!!
+    npm install gatsby
+    npm install gatsby-cli
     ```
 
-2.  **Start the project.**
+2.  **Restart your terminal.**
+
+3.  **Start the project.**
 
     ```shell
     gatsby develop
     ```
 
-3.  **Build project for deployment.**
+4.  **Build project for deployment.**
 
     ```shell
     gatsby build
