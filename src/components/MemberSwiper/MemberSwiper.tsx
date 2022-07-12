@@ -32,6 +32,7 @@ const MemberSwiper: React.FC<MemberSwiperProps> = ({ members }) => {
               name={el.name}
               nickname={el.nickname}
               surname={el.surname}
+              title={el.title}
               role={el.role}
               picture={el.picture}
               quote={el.quote}

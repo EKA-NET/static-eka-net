@@ -3,11 +3,19 @@ import React from "react";
 interface ContentWrapperProps {
   id: any;
   children?: any;
+  className?: string;
 }
 
-const ContentWrapper: React.FC<ContentWrapperProps> = ({ id, children }) => {
+const ContentWrapper: React.FC<ContentWrapperProps> = ({
+  id,
+  children,
+  className,
+}) => {
   return (
-    <article id={id} className="mx-auto min-h-screen pt-8 px-4 md:max-w-5xl">
+    <article
+      id={id}
+      className={`mx-auto min-h-screen pt-8 px-4 md:max-w-5xl ${className}`}
+    >
       {children}
     </article>
   );

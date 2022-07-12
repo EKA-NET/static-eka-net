@@ -2,37 +2,12 @@ import * as React from "react";
 import ContentHeader from "../components/ContentHeader";
 import ContentSection from "../components/ContentSection";
 import ContentWrapper from "../components/ContentWrapper";
-import MemberCardProps from "../components/MemberCard/MemberCardProps";
 import MemberSwiper from "../components/MemberSwiper";
 import NavBar from "../components/NavBar";
-import Images from "../images/Images";
+import Images from "../consts/Images";
+import { Members } from "../consts/Members";
 
 const IndexPage = () => {
-  const members: MemberCardProps[] = [
-    //{
-    //  name: "",
-    //  nickname: "",
-    //  surname: "",
-    //  role: "",
-    //  picture: "",
-    //  quote: "",
-    //},
-    {
-      name: "Wojciech",
-      nickname: "Senti",
-      surname: "Warwas",
-      role: "Członek",
-      picture: Images.Senti,
-      quote: "Lets goo",
-    },
-    {
-      name: "Piotr",
-      surname: "Szczypior",
-      role: "Członek",
-      picture: Images.Piotrek,
-    },
-  ];
-
   return (
     <>
       <NavBar logo={Images.Logo} />
@@ -40,7 +15,7 @@ const IndexPage = () => {
         <ContentHeader>Kim jesteśmy?</ContentHeader>
         <ContentSection>
           <img
-            className="border-2 border-solid rounded-3xl mb-4 bg-white"
+            className="border-2 border-solid border-transparent rounded-3xl mb-4 bg-white"
             src={Images.Team}
             alt="EKA.NET team"
           />
@@ -60,7 +35,8 @@ const IndexPage = () => {
       <ContentWrapper id="members">
         <ContentHeader>Członkowie</ContentHeader>
         <ContentSection>
-          <MemberSwiper members={members} />
+          Aktualnie nasze koło posiada {Members.length} aktywnych członków.
+          <MemberSwiper members={Members} />
         </ContentSection>
       </ContentWrapper>
       <ContentWrapper id="contact">

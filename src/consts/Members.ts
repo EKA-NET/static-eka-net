@@ -1,0 +1,125 @@
+import MemberCardProps from "../components/MemberCard/MemberCardProps";
+import Images from "./Images";
+
+export const Members: MemberCardProps[] = [
+  //{
+  //  name: "",
+  //  nickname: "",
+  //  surname: "",
+  //  title: "",
+  //  role: "",
+  //  picture: "",
+  //  quote: "",
+  //},
+  {
+    name: "Tomasz",
+    surname: "Zawadzki",
+    role: "Prezes",
+    picture: Images.NoPicture,
+  },
+  {
+    name: "Adam",
+    surname: "Bednorz",
+    role: "Lider sekcji promocji",
+    picture: Images.NoPicture,
+  },
+  {
+    name: "Mikołaj",
+    surname: "Rerok",
+    role: "Lider sekcji finansów",
+    picture: Images.NoPicture,
+  },
+  {
+    name: "Norbert",
+    surname: "Świderski",
+    role: "Lider sekcji organizacji",
+    picture: Images.NoPicture,
+  },
+  {
+    name: "Szymon",
+    surname: "Tomala",
+    role: "Członek",
+    picture: Images.NoPicture,
+  },
+  {
+    name: "Robert",
+    surname: "Krzaczyński",
+    role: "Członek",
+    picture: Images.NoPicture,
+  },
+  {
+    name: "Jakub",
+    surname: "Pietrus",
+    role: "Członek",
+    picture: Images.NoPicture,
+  },
+  {
+    name: "Jan",
+    surname: "Dziedziela",
+    role: "Członek",
+    picture: Images.NoPicture,
+  },
+  {
+    name: "Wojciech",
+    nickname: "Senti",
+    surname: "Warwas",
+    role: "Członek",
+    picture: Images.Senti,
+    quote: "Lets goo",
+  },
+  {
+    name: "Hubert",
+    surname: "Frąckowiak",
+    role: "Członek",
+    picture: Images.NoPicture,
+  },
+  {
+    name: "Arkadiusz",
+    surname: "Kacperski",
+    role: "Członek",
+    picture: Images.NoPicture,
+  },
+  {
+    name: "Romeo",
+    surname: "Rego",
+    role: "Członek",
+    picture: Images.NoPicture,
+  },
+  {
+    name: "Romek",
+    surname: "Buszko",
+    role: "Członek",
+    picture: Images.NoPicture,
+  },
+  {
+    name: "Michał",
+    surname: "Smalira",
+    role: "Członek",
+    picture: Images.NoPicture,
+  },
+  {
+    name: "Piotr",
+    surname: "Szczypior",
+    role: "Członek",
+    picture: Images.Piotrek,
+  },
+  {
+    name: "Adam",
+    surname: "Dłubak",
+    role: "Patron",
+    picture: Images.NoPicture,
+  },
+  {
+    name: "Szymon",
+    surname: "Pulka",
+    role: "Patron",
+    picture: Images.NoPicture,
+  },
+  {
+    name: "Bartosz",
+    surname: "Jabłoński",
+    title: "Dr inż.",
+    role: "Opiekun koła",
+    picture: Images.NoPicture,
+  },
+];
