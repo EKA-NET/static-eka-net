@@ -6,8 +6,8 @@ import MemberCardProps from "../components/MemberCard/MemberCardProps";
 import MemberSwiper from "../components/MemberSwiper";
 import NavBar from "../components/NavBar";
 import Images from "../images/Images";
-
-import Contact from '../components/Contact';
+import Footer from "../components/Footer";
+import Contact from "../components/Contact";
 
 const IndexPage = () => {
   const members: MemberCardProps[] = [
@@ -57,7 +57,21 @@ const IndexPage = () => {
       </ContentWrapper>
       <ContentWrapper id="about">
         <ContentHeader>Nasza misja</ContentHeader>
-        <ContentSection>:D</ContentSection>
+        <ContentSection>
+          <div className="">
+            Nasza społeczność zajmuje się organizacją różnego typu event'ów
+            związanych z IT. Jedną z naszych kluczowych inicjatyw jest coroczna
+            konferencja studencka IT Academic Day, czyli całodniowy blok
+            prelekcji technicznych i rozwojowych, firmy partnerskie, zaproszeni
+            goście specjalni (np. przedstawiciele Microsoft), ponad 200
+            uczestników, świetna zabawa, wymiana doświadczeń i nawiązywanie
+            nowych kontaktów. Ponadto orgaznizujemy akademie programowania dla
+            studentów, maratony programowania, spotkania z doświadczonymi
+            specjalistami z branży. W wolnych chwilach zdarza nam się również
+            uczestniczyć w konferencjach programistycznych (jesteśmy partnerami
+            m. in. WROC# oraz 4Developers).
+          </div>
+        </ContentSection>
       </ContentWrapper>
       <ContentWrapper id="members">
         <ContentHeader>Członkowie</ContentHeader>
@@ -110,6 +124,16 @@ const IndexPage = () => {
           </ul>
         </ContentSection>
       </Contact>
+      <Footer>
+        <div className="text-center block text-s">Designed with ☕ by:</div>
+        <div className="text-center block text-s">
+          <u>
+            <a href="https://senti.dev/">Wojciech Warwas</a>
+          </u>{" "}
+          & Piotr Szczypior
+        </div>
+        <div className="text-center block text-s">© Copyright 2022</div>
+      </Footer>
     </>
   );
 };

@@ -15,7 +15,7 @@ const NavBar: React.FC<NavBarProps> = ({ logo }) => {
       <ul className="flex flex-col items-center leading-[4rem] justify-center m-0 mt-8 p-0 sm:leading-3 sm:flex-row md:space-x-10">
         <li className="float-left after:clear-both">
           <a
-            className="p-3 no-underline text-2xl bg-white border-2 rounded-3xl border-white hover:text-red-500 hover:border-2 hover:rounded-3xl hover:border-red-500"
+            className="p-3 no-underline text-3xl bg-white border-2 rounded-3xl border-white hover:text-red-500 hover:border-2 hover:rounded-3xl hover:border-red-500"
             href="#welcome"
           >
             Kim jesteśmy
@@ -23,7 +23,7 @@ const NavBar: React.FC<NavBarProps> = ({ logo }) => {
         </li>
         <li className="float-left after:clear-both">
           <a
-            className="p-3 no-underline text-2xl bg-white border-2 rounded-3xl border-white hover:text-green-500 hover:border-2 hover:rounded-3xl hover:border-green-500"
+            className="p-3 no-underline text-3xl bg-white border-2 rounded-3xl border-white hover:text-green-500 hover:border-2 hover:rounded-3xl hover:border-green-500"
             href="#about"
           >
             Nasza misja
@@ -31,7 +31,7 @@ const NavBar: React.FC<NavBarProps> = ({ logo }) => {
         </li>
         <li className="float-left after:clear-both">
           <a
-            className="p-3 no-underline text-2xl bg-white border-2 rounded-3xl border-white hover:text-blue-500 hover:border-2 hover:rounded-3xl hover:border-blue-500"
+            className="p-3 no-underline text-3xl bg-white border-2 rounded-3xl border-white hover:text-blue-500 hover:border-2 hover:rounded-3xl hover:border-blue-500"
             href="#members"
           >
             Członkowie
@@ -39,7 +39,7 @@ const NavBar: React.FC<NavBarProps> = ({ logo }) => {
         </li>
         <li className="float-left after:clear-both">
           <a
-            className="p-3 no-underline text-2xl bg-white border-2 rounded-3xl border-white hover:text-yellow-500 hover:border-2 hover:rounded-3xl hover:border-yellow-500"
+            className="p-3 no-underline text-3xl bg-white border-2 rounded-3xl border-white hover:text-yellow-500 hover:border-2 hover:rounded-3xl hover:border-yellow-400"
             href="#contact"
           >
             Kontakt
