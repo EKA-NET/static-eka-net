@@ -3,6 +3,10 @@ import Team from "./../images/team.jpg";
 import Senti from "./../images/senti.jpg";
 import Piotrek from "./../images/piotrek.jpg";
 import NoPicture from "./../images/user-solid.svg";
+import FacebookIcon from "./../images/icons/facebook.svg";
+import envelopeIcon from "./../images/icons/envelope.svg";
+import twitterIcon from "./../images/icons/twitter.svg";
+import linkedinIcon from "./../images/icons/linkedin.svg";
 
 export default {
   Logo,
@@ -10,4 +14,8 @@ export default {
   Senti,
   Piotrek,
   NoPicture,
+  FacebookIcon,
+  envelopeIcon,
+  twitterIcon,
+  linkedinIcon,
 };
