@@ -14,7 +14,7 @@ const ContentWrapper: React.FC<ContentWrapperProps> = ({
   return (
     <article
       id={id}
-      className={`mx-auto min-h-screen pt-8 px-4 md:max-w-5xl ${className}`}
+      className={`mx-auto min-h-fit pb-8 pt-8 px-4 md:max-w-5xl ${className}`}
     >
       {children}
     </article>
