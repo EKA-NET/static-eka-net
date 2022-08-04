@@ -5,9 +5,11 @@ import ContentWrapper from "../components/ContentWrapper";
 import MemberSwiper from "../components/MemberSwiper";
 import NavBar from "../components/NavBar";
 import Images from "../consts/Images";
+import Links from "../consts/Links";
 import { Members } from "../consts/Members";
 import Footer from "../components/Footer";
 import Contact from "../components/Contact";
+import { Link } from "gatsby";
 
 const IndexPage = () => {
   return (
@@ -64,9 +66,9 @@ const IndexPage = () => {
             bądź przez nasze kanały social media!
           </div>
 
-          <ul className="flex flex-col items-center leading-[4rem] justify-center m-0 mt-8 p-0 sm:leading-3 sm:flex-row md:space-x-10">
+          <ul className="flex flex-row space-x-5 items-center pt-8 leading-[4rem] justify-center m-0 mt-8 p-0 sm:leading-3 md:space-x-10">
             <li className="float-left after:clear-both">
-              <a href="https://www.facebook.com/ekadotnet/">
+              <a href={Links.Facebook}>
                 <img
                   className="w-8 inline-block text-black fill-black hover:opacity-50"
                   src={Images.FacebookIcon}
@@ -74,26 +76,26 @@ const IndexPage = () => {
               </a>
             </li>
             <li className="float-left after:clear-both">
-              <a href="">
+              <a href={Links.Mail}>
                 <img
                   className="w-8 inline-block text-black fill-black hover:opacity-50"
-                  src={Images.envelopeIcon}
+                  src={Images.EnvelopeIcon}
                 />
               </a>
             </li>
             <li className=" float-left after:clear-both">
-              <a href="https://twitter.com/EkaDotNet">
+              <a href={Links.Twitter}>
                 <img
                   className="w-8 inline-block text-black fill-black hover:opacity-50"
-                  src={Images.twitterIcon}
+                  src={Images.TwitterIcon}
                 />
               </a>
             </li>
             <li className="float-left after:clear-both">
-              <a href="https://www.linkedin.com/company/ekadotnet/mycompany/">
+              <a href={Links.LinkedIn}>
                 <img
                   className="w-8 inline-block text-black fill-black hover:opacity-50"
-                  src={Images.linkedinIcon}
+                  src={Images.LinkedinIcon}
                 />
               </a>
             </li>
@@ -101,14 +103,14 @@ const IndexPage = () => {
         </ContentSection>
       </Contact>
       <Footer>
-        <div className="text-center block text-s">Designed with ☕ by:</div>
+        <span className="text-center block text-s">Designed with ☕ by:</span>
         <div className="text-center block text-s">
           <u>
             <a href="https://senti.dev/">Wojciech Warwas</a>
           </u>{" "}
           & Piotr Szczypior
         </div>
-        <div className="text-center block text-s">© Copyright 2022</div>
+        <span className="text-center block text-s">© Copyright 2022</span>
       </Footer>
     </>
   );
