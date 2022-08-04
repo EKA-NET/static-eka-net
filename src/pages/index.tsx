@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 import ContentHeader from "../components/ContentHeader";
 import ContentSection from "../components/ContentSection";
 import ContentWrapper from "../components/ContentWrapper";

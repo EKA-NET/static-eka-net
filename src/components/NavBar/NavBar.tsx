@@ -1,4 +1,5 @@
 import React from "react";
+import NavBarLink from "../NavBarLink";
 
 interface NavBarProps {
   logo: string;
@@ -14,36 +15,36 @@ const NavBar: React.FC<NavBarProps> = ({ logo }) => {
       />
       <ul className="flex flex-col items-center leading-[4rem] justify-center m-0 mt-8 p-0 sm:leading-3 sm:flex-row md:space-x-10">
         <li className="float-left after:clear-both">
-          <a
-            className="p-3 no-underline text-2xl bg-white border-2 rounded-3xl border-white transition-all ease-in-out delay-75 hover:text-red-500 hover:border-2 hover:rounded-3xl hover:border-red-500"
+          <NavBarLink
             href="#welcome"
+            className="hover:text-red-500 hover:border-red-500"
           >
             Kim jesteśmy
-          </a>
+          </NavBarLink>
         </li>
         <li className="float-left after:clear-both">
-          <a
-            className="p-3 no-underline text-2xl bg-white border-2 rounded-3xl border-white transition-all ease-in-out delay-75 hover:text-green-500 hover:border-2 hover:rounded-3xl hover:border-green-500"
+          <NavBarLink
             href="#about"
+            className="hover:text-green-500 hover:border-green-500"
           >
             Nasza misja
-          </a>
+          </NavBarLink>
         </li>
         <li className="float-left after:clear-both">
-          <a
-            className="p-3 no-underline text-2xl bg-white border-2 rounded-3xl border-white transition-all ease-in-out delay-75 hover:text-blue-500 hover:border-2 hover:rounded-3xl hover:border-blue-500"
+          <NavBarLink
             href="#members"
+            className="hover:text-blue-500 hover:border-blue-500"
           >
             Członkowie
-          </a>
+          </NavBarLink>
         </li>
         <li className="float-left after:clear-both">
-          <a
-            className="p-3 no-underline text-2xl bg-white border-2 rounded-3xl border-white transition-all ease-in-out delay-75 hover:text-yellow-500 hover:border-2 hover:rounded-3xl hover:border-yellow-500"
+          <NavBarLink
             href="#contact"
+            className="hover:text-yellow-500 hover:border-yellow-500"
           >
             Kontakt
-          </a>
+          </NavBarLink>
         </li>
       </ul>
     </nav>
