@@ -19,7 +19,7 @@ const NavBar: React.FC<NavBarProps> = ({ logo }) => {
             href="#welcome"
             className="hover:text-red-500 hover:border-red-500"
           >
-            Kim jesteśmy
+            O nas
           </NavBarLink>
         </li>
         <li className="float-left after:clear-both">

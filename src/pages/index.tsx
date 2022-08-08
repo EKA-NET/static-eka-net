@@ -8,18 +8,17 @@ import Images from "../consts/Images";
 import Links from "../consts/Links";
 import { Members } from "../consts/Members";
 import Footer from "../components/Footer";
-import Contact from "../components/Contact";
-import { Link } from "gatsby";
+import FullWidthContainer from "../components/FullWidthContainer";
 
 const IndexPage = () => {
   return (
     <>
       <NavBar logo={Images.Logo} />
       <ContentWrapper id="welcome">
-        <ContentHeader>Kim jesteśmy?</ContentHeader>
+        <ContentHeader>O nas</ContentHeader>
         <ContentSection>
           <img
-            className="border-2 border-solid border-transparent rounded-3xl mb-4 bg-white"
+            className="border-2 border-solid border-transparent rounded-lg mb-4 bg-white"
             src={Images.Team}
             alt="EKA.NET team"
           />
@@ -35,7 +34,7 @@ const IndexPage = () => {
       <ContentWrapper id="about">
         <ContentHeader>Nasza misja</ContentHeader>
         <ContentSection>
-          <div className="">
+          <div>
             Nasza społeczność zajmuje się organizacją różnego typu event'ów
             związanych z IT. Jedną z naszych kluczowych inicjatyw jest coroczna
             konferencja studencka IT Academic Day, czyli całodniowy blok
@@ -53,11 +52,10 @@ const IndexPage = () => {
       <ContentWrapper id="members">
         <ContentHeader>Członkowie</ContentHeader>
         <ContentSection>
-          Aktualnie nasze koło posiada {Members.length} aktywnych członków.
           <MemberSwiper members={Members} />
         </ContentSection>
       </ContentWrapper>
-      <Contact id="contact">
+      <ContentWrapper id="contact">
         <ContentHeader>Kontakt</ContentHeader>
         <ContentSection>
           <div className="text-center text">
@@ -66,7 +64,7 @@ const IndexPage = () => {
             bądź przez nasze kanały social media!
           </div>
 
-          <ul className="flex flex-row space-x-5 items-center pt-8 leading-[4rem] justify-center m-0 mt-8 p-0 sm:leading-3 md:space-x-10">
+          <ul className="flex flex-row space-x-14 items-center pt-8 leading-[4rem] justify-center m-0 mt-8 p-0 sm:leading-3 md:space-x-10">
             <li className="float-left after:clear-both">
               <a href={Links.Facebook}>
                 <img
@@ -101,7 +99,7 @@ const IndexPage = () => {
             </li>
           </ul>
         </ContentSection>
-      </Contact>
+      </ContentWrapper>
       <Footer>
         <span className="text-center block text-s">Designed with ☕ by:</span>
         <div className="text-center block text-s">

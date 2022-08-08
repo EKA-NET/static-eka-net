@@ -11,7 +11,7 @@ const NavBarLink: React.FC<NavBarLinkProps> = ({
 }) => {
   return (
     <a
-      className={`p-3 no-underline text-2xl bg-white border-2 rounded-3xl border-white transition-all ease-in-out delay-75 hover:text-red-500 hover:border-2 hover:rounded-3xl hover:border-red-500 ${className}`}
+      className={`p-3 no-underline text-2xl bg-white border-2 border-white transition-all ease-in-out delay-75 hover:text-red-500 hover:border-2 hover:rounded-3xl hover:border-red-500 ${className}`}
       href={href}
     >
       {children}
