@@ -32,6 +32,14 @@ const NavBar: React.FC<NavBarProps> = ({ logo }) => {
         </li>
         <li className="float-left after:clear-both">
           <NavBarLink
+            href="#itad"
+            className="hover:text-purple-500 hover:border-purple-500"
+          >
+            ITAD
+          </NavBarLink>
+        </li>
+        <li className="float-left after:clear-both">
+          <NavBarLink
             href="#members"
             className="hover:text-blue-500 hover:border-blue-500"
           >

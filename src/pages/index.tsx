@@ -8,7 +8,6 @@ import Images from "../consts/Images";
 import Links from "../consts/Links";
 import { Members } from "../consts/Members";
 import Footer from "../components/Footer";
-import FullWidthContainer from "../components/FullWidthContainer";
 
 const IndexPage = () => {
   return (
@@ -19,7 +18,7 @@ const IndexPage = () => {
         <ContentSection>
           <img
             className="border-2 border-solid border-transparent rounded-lg mb-4 bg-white"
-            src={Images.Team}
+            src={Images.Team1}
             alt="EKA.NET team"
           />
           EKA.NET to Koło Naukowe Wydziału Informatyki i Telekomunikacji
@@ -34,6 +33,11 @@ const IndexPage = () => {
       <ContentWrapper id="about">
         <ContentHeader>Nasza misja</ContentHeader>
         <ContentSection>
+          <img
+            className="border-2 border-solid border-transparent rounded-lg mb-4 bg-white"
+            src={Images.Team2}
+            alt="EKA.NET team"
+          />
           <div>
             Nasza społeczność zajmuje się organizacją różnego typu event'ów
             związanych z IT. Jedną z naszych kluczowych inicjatyw jest coroczna
@@ -49,6 +53,27 @@ const IndexPage = () => {
           </div>
         </ContentSection>
       </ContentWrapper>
+      <ContentWrapper id="itad">
+        <ContentHeader>IT Academic Day</ContentHeader>
+        <ContentSection>
+          <div className="text-center text-2xl">Co?</div>
+          <div className="text-center">
+            IT Academic Day to ogromne wydarzenie w akademickim świecie IT
+            organizowane co roku od 2016 przez koło naukowe EKA.NET. ITAD
+            zapewnia kontakt studentów z przyszłymi pracodawcami, prelekcje,
+            networking z innymi pasjonatami IT.
+          </div>
+          <div className="text-center text-2xl pt-2">Kiedy?</div>
+          <div className="text-center">
+            IT Academic Day odbędzie się 26.11.2022.
+          </div>
+          <div className="text-center text-2xl pt-2">Gdzie?</div>
+          <div className="text-center">
+            IT Academic Day będzie miał stacjonarnie w sali 127 w budynku C-13
+            na kampusie Politechniki Wrocławskiej.
+          </div>
+        </ContentSection>
+      </ContentWrapper>
       <ContentWrapper id="members">
         <ContentHeader>Członkowie</ContentHeader>
         <ContentSection>
@@ -58,7 +83,7 @@ const IndexPage = () => {
       <ContentWrapper id="contact">
         <ContentHeader>Kontakt</ContentHeader>
         <ContentSection>
-          <div className="text-center text">
+          <div className="text-center">
             Jeśli masz ochotę zostać członkiem naszego Koła lub masz
             interesującą ofertę współpracy to zapraszamy do kontaktu mailowego,
             bądź przez nasze kanały social media!
