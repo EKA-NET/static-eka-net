@@ -15,13 +15,13 @@ export const Members: MemberCardProps[] = [
     name: "Tomasz",
     surname: "Zawadzki",
     role: "Prezes",
-    picture: Images.NoPicture,
+    picture: Images.Tomasz,
   },
   {
     name: "Adam",
     surname: "Bednorz",
     role: "Lider sekcji promocji",
-    picture: Images.NoPicture,
+    picture: Images.Adam,
   },
   {
     name: "Mikołaj",
@@ -51,7 +51,7 @@ export const Members: MemberCardProps[] = [
     name: "Jakub",
     surname: "Pietrus",
     role: "Członek",
-    picture: Images.NoPicture,
+    picture: Images.Jakub,
   },
   {
     name: "Jan",
@@ -71,7 +71,7 @@ export const Members: MemberCardProps[] = [
     name: "Hubert",
     surname: "Frąckowiak",
     role: "Członek",
-    picture: Images.NoPicture,
+    picture: Images.Hubert,
   },
   {
     name: "Arkadiusz",
