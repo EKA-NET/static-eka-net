@@ -57,7 +57,7 @@ export const Members: MemberCardProps[] = [
     name: "Jan",
     surname: "Dziedziela",
     role: "Członek",
-    picture: Images.NoPicture,
+    picture: Images.Jan,
   },
   {
     name: "Wojciech",
@@ -95,7 +95,7 @@ export const Members: MemberCardProps[] = [
     name: "Michał",
     surname: "Smalira",
     role: "Członek",
-    picture: Images.NoPicture,
+    picture: Images.Michał,
   },
   {
     name: "Piotr",

@@ -13,6 +13,9 @@ import Adam from "./../images/members/Adam.jpg";
 import Hubert from "./../images/members/Hubert.jpg";
 import Jakub from "./../images/members/Jakub.jpg";
 import Tomasz from "./../images/members/Tomasz.jpg";
+import Jan from "./../images/members/Jan.jpg";
+import Michał from "./../images/members/Michał.jpg";
+
 
   // Icons
 import FacebookIcon from "./../images/icons/facebook.svg";
@@ -34,6 +37,8 @@ export default {
   Hubert,
   Jakub,
   Tomasz,
+  Michał,
+  Jan,
   // Icons
   FacebookIcon,
   EnvelopeIcon,
