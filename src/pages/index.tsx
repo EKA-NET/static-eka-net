@@ -6,36 +6,11 @@ import MemberCardProps from "../components/MemberCard/MemberCardProps";
 import MemberSwiper from "../components/MemberSwiper";
 import NavBar from "../components/NavBar";
 import Images from "../images/Images";
+import { Layout } from "../components/Layout";
 
 const IndexPage = () => {
-  const members: MemberCardProps[] = [
-    //{
-    //  name: "",
-    //  nickname: "",
-    //  surname: "",
-    //  role: "",
-    //  picture: "",
-    //  quote: "",
-    //},
-    {
-      name: "Wojciech",
-      nickname: "Senti",
-      surname: "Warwas",
-      role: "Członek",
-      picture: Images.Senti,
-      quote: "Lets goo",
-    },
-    {
-      name: "Piotr",
-      surname: "Szczypior",
-      role: "Członek",
-      picture: Images.Piotrek,
-    },
-  ];
-
   return (
-    <>
-      <NavBar logo={Images.Logo} />
+    <Layout>
       <ContentWrapper id="welcome">
         <ContentHeader>Kim jesteśmy?</ContentHeader>
         <ContentSection>
@@ -49,7 +24,7 @@ const IndexPage = () => {
           technologii Microsoft'owych. Nasze działania polegają na popularyzacji
           wiedzy i umiejętności dotyczących platformy .NET, chmury Azure oraz
           sztucznej inteligencji. Wspieramy osoby rozpoczynające dopiero swoją
-          przygodę, jak i bardziej doświadczonych kolegów i koleżanik poprzez
+          przygodę, jak i bardziej doświadczonych kolegów i koleżanek poprzez
           oferowanie licznych warsztatach, projektach, czy konferencjach.
         </ContentSection>
       </ContentWrapper>
@@ -57,17 +32,12 @@ const IndexPage = () => {
         <ContentHeader>Nasza misja</ContentHeader>
         <ContentSection>:D</ContentSection>
       </ContentWrapper>
-      <ContentWrapper id="members">
-        <ContentHeader>Członkowie</ContentHeader>
-        <ContentSection>
-          <MemberSwiper members={members} />
-        </ContentSection>
-      </ContentWrapper>
+
       <ContentWrapper id="contact">
         <ContentHeader>Kontakt</ContentHeader>
         <ContentSection>aaa</ContentSection>
       </ContentWrapper>
-    </>
+    </Layout>
   );
 };
 

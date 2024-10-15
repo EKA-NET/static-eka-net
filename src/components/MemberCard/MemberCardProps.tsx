@@ -3,7 +3,7 @@ interface MemberCardProps {
   nickname?: string;
   surname: string;
   role: string;
-  picture: string;
+  picture?: string;
   quote?: string;
 }
 

@@ -1,5 +1,6 @@
 import React from "react";
 import MemberCardProps from "./MemberCardProps";
+import Images from "../../images/Images";
 
 const MemberCard: React.FC<MemberCardProps> = ({
   name,
@@ -23,16 +24,16 @@ const MemberCard: React.FC<MemberCardProps> = ({
 
   return (
     <div className="p-4 max-w-sm">
-      <header className="mb-4 text-xl text-center">
-        {name} {boldNickname} {surname}
-      </header>
       <main>
         <img
-          src={picture}
+          src={picture ?? Images.Default}
           alt={"Picture of " + fullName}
           className="object-cover w-64 h-64 block mx-auto text-center border-2 rounded-lg border-transparent"
         />
         <p className="p-0 text-center mt-4">{role}</p>
+        <header className="mb-4 text-2xl text-center">
+          {name} {boldNickname} {surname}
+        </header>
 
         {quoteElement}
       </main>

@@ -5,46 +5,34 @@ interface NavBarProps {
 }
 
 const NavBar: React.FC<NavBarProps> = ({ logo }) => {
+  const sections = [
+    { id: "welcome", name: "Kim jesteśmy" },
+    { id: "about", name: "Nasza misja" },
+    { id: "members", name: "Członkowie" },
+    { id: "contact", name: "Kontakt" },
+  ]
+
   return (
-    <nav className="pt-8 select-none">
-      <img
-        src={logo}
-        alt="EKA.NET logo"
-        className="mx-auto flex-col max-w-xs max-h-12 md:max-w-md md:max-h-16"
-      />
-      <ul className="flex flex-col items-center leading-[4rem] justify-center m-0 mt-8 p-0 sm:leading-3 sm:flex-row md:space-x-10">
-        <li className="float-left after:clear-both">
-          <a
-            className="p-3 no-underline text-2xl bg-white border-2 rounded-3xl border-white hover:text-red-500 hover:border-2 hover:rounded-3xl hover:border-red-500"
-            href="#welcome"
-          >
-            Kim jesteśmy
-          </a>
-        </li>
-        <li className="float-left after:clear-both">
-          <a
-            className="p-3 no-underline text-2xl bg-white border-2 rounded-3xl border-white hover:text-green-500 hover:border-2 hover:rounded-3xl hover:border-green-500"
-            href="#about"
-          >
-            Nasza misja
-          </a>
-        </li>
-        <li className="float-left after:clear-both">
-          <a
-            className="p-3 no-underline text-2xl bg-white border-2 rounded-3xl border-white hover:text-blue-500 hover:border-2 hover:rounded-3xl hover:border-blue-500"
-            href="#members"
-          >
-            Członkowie
-          </a>
-        </li>
-        <li className="float-left after:clear-both">
-          <a
-            className="p-3 no-underline text-2xl bg-white border-2 rounded-3xl border-white hover:text-yellow-500 hover:border-2 hover:rounded-3xl hover:border-yellow-500"
-            href="#contact"
-          >
-            Kontakt
-          </a>
-        </li>
+    <nav className="flex flex-row justify-between py-8 px-4 select-none">
+      <a href='/'>
+        <img
+          src={logo}
+          alt="EKA.NET logo"
+          className="ml-4 max-w-xs max-h-8 md:max-w-md md:max-h-8"
+        />
+      </a>
+      <ul className="flex flex-row float-right mr-4 leading-[4rem] sm:leading-3 sm:flex-row md:space-x-8">
+        {sections.map((section) => (
+          <li className="float-left after:clear-both">
+            <a
+              className="p-3 no-underline font-bold text-2xl"
+              href={section.id}
+            >
+              {section.name}
+            </a>
+          </li>
+        ))
+        }
       </ul>
     </nav>
   );
